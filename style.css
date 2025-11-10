@@ -1,6 +1,6 @@
 .main-container {
     display: grid;
-    grid-template: repeat(2, auto) / minmax(200px, 1fr) 4fr;
+    grid-template: 150px auto / minmax(200px, 1fr) 4fr;
 }
 
 .side-bar {
@@ -18,7 +18,21 @@
 }
 
 .header {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 2fr 1fr;
+    align-items: center;    
+}
 
+.header .search-bar {
+    margin: 0;
+}
+
+.header .user-info {
+    
+}
+
+.header .options {
+    display: flex;
 }
 
 .content {
