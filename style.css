@@ -1,17 +1,47 @@
+:root {
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: var(--system-ui);
+}
+
+img[src$=".svg"] {
+    filter: invert(100%);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .main-container {
     display: grid;
-    grid-template: 150px auto / minmax(200px, 1fr) 4fr;
+    grid-template: 150px minmax(calc(100lvh - 150px), auto) / minmax(250px, 1fr) 4fr;
 }
 
 .side-bar {
     background-color: rgb(37, 176, 223);
+    padding: 10px;
     color: white;
+    font-weight: bolder;
     grid-row: span 2;
 }
 
+.side-bar .top, 
 .side-bar ul {
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-gap: 10px;
+    align-items: center;
     list-style-type: none;
     padding: 0;
+}
+
+.side-bar img {
+    justify-self: center;
+}
+
+.side-bar .section1,
+.side-bar .section2 {
+    margin: 20px 0;
 }
 
 .header {
