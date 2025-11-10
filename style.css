@@ -1,0 +1,26 @@
+.main-container {
+    display: grid;
+    grid-template: repeat(2, auto) / minmax(200px, 1fr) 4fr;
+}
+
+.side-bar {
+    background-color: rgb(37, 176, 223);
+    color: white;
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+.side-bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header {
+
+}
+
+.content {
+    background-color: rgb(225, 225, 225);
+}
